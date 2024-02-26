@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px 80px;
+    text-align: center;
+}
+h1{
+    color: rgba(0, 153, 255);
+}
+.upload-area{
+    text-align: left;
+    width: 100%;
+    line-height: 70px;
+    background-color: rgba(0, 153, 255, 0.05);
+    border-radius: 8px;
+}
+.upload{
+    background-color: rgba(0, 153, 255);
+    border: 1px solid rgba(0, 153, 255);
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px 45px;
+}
+.upload:active{
+    border-color: white;
+}
+.progress-container{
+    display: inline-block;
+    width: 65%;
+    border: 2px solid rgba(0, 153, 255);
+    height: 30px;
+    position: relative;
+    top: 13px;
+    padding: 2px;
+}
+.progress{
+    width: 0%;
+    background-color: rgba(0, 153, 255);
+    height: 100%;
+    transition-duration: .3s;
+}
+.percent{
+    display: inline-block;
+    margin-left: 20px;
+}
+.controls{
+    float: right;
+    margin-right: 45px;
+}
+.pause, .resume, .cancel{
+    background-color: rgba(0, 153, 255);
+    fill: white;
+    padding: 5px;
+    margin: 2px;
+    margin-top: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.resume{
+    display: none;
+}
+
+.all-files{
+    text-align: left;
+    padding: 20px;
+}
+h2{
+    margin-left: 25px;
+    color: rgba(0, 153, 255);
+}
+.all-files ul{
+    position: relative;
+    left: -15px;
+}
+.all-files ul li{
+    list-style: none;
+    background-color: rgba(0, 153, 255);
+    display: inline-block;
+    padding: 10px;
+    padding-right: 45px;
+    color: white;
+    width: 300px;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: default;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.all-files ul li svg{
+    fill: white;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.expand-container{
+    width: 100px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgba(0, 153, 255, 0.2);
+    background-color: white;
+    position: absolute;
+    height: 75px;
+    display: none;
+}
+.expand-container ul li{
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    margin: 4px;
+    margin-left: 5px;
+    color: rgba(0, 153, 255);
+    position: relative;
+    left: -40px;
+    top: -10px;
+    cursor: pointer;
+}
+.loader{
+    animation: rotate 1.5s linear infinite;
+    width: 60px;
+    margin-top: 7px;
+    margin-left: 20px;
+    display: none;
+}
+@keyframes rotate{
+    to{transform: rotate(360deg);}
+}
